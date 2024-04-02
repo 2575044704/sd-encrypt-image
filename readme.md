@@ -3,8 +3,8 @@
 [中文](readme.md) | [english](readme.en.md)
 
 **这是一个stable-diffusion-webui的插件，实现了在图片保存到磁盘前对图片进行加密，在访问时响应解密后的图片的功能，便于在使用公有云时安全的存储图片而降低封号风险**
-
-- 一些云平台(例如谷歌Kaggle)在生成图片检测到涩图时候会封号，这个插件可以避免封号
+## 适用于：[Kaggle SD WebUI云端部署](https://www.kaggle.com/code/qq2575044704/stable-diffusion-webui-novelai-edited-version-2)
+- 一些免费云平台(例如谷歌Kaggle)在生成图片检测到涩图时候会封号，这个插件可以避免封号
 - 这个插件会修改Image对象，重写了save方法，启用将会导致所有的图片保存行为都被加密
 - 如果忘记密码，可能会导致你无法还原你的图像。
 - 需要增加 ```--api``` 启动参数来保证在网页可以正常浏览图片。
